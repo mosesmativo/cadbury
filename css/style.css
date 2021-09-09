@@ -1,0 +1,957 @@
+@font-face {
+    font-family: 'Druk Wide';
+    src: url('../fonts/DrukWide-Bold.eot');
+    src: url('../fonts/DrukWide-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DrukWide-Bold.woff') format('woff'),
+        url('../fonts/DrukWide-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Druk Wide Medium';
+    src: url('../fonts/DrukWideWeb-Medium.eot');
+    src: url('../fonts/DrukWideWeb-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DrukWideWeb-Medium.woff2') format('woff2'),
+        url('../fonts/DrukWideWeb-Medium.woff') format('woff'),
+        url('../fonts/DrukWideWeb-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Effra';
+    src: url('../fonts/Effra-Regular.eot');
+    src: url('../fonts/Effra-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Effra-Regular.woff2') format('woff2'),
+        url('../fonts/Effra-Regular.woff') format('woff'),
+        url('../fonts/Effra-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Effra Mid';
+    src: url('../fonts/EffraMedium-Regular.eot');
+    src: url('../fonts/EffraMedium-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/EffraMedium-Regular.woff2') format('woff2'),
+        url('../fonts/EffraMedium-Regular.woff') format('woff'),
+        url('../fonts/EffraMedium-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Effra Heavy';
+    src: url('../fonts/EffraHeavy-Regular.eot');
+    src: url('../fonts/EffraHeavy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/EffraHeavy-Regular.woff2') format('woff2'),
+        url('../fonts/EffraHeavy-Regular.woff') format('woff'),
+        url('../fonts/EffraHeavy-Regular.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Druk Wide Web Super';
+    src: url('../fonts/DrukWideWeb-Super.eot');
+    src: url('../fonts/DrukWideWeb-Super.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DrukWideWeb-Super.woff2') format('woff2'),
+        url('../fonts/DrukWideWeb-Super.woff') format('woff'),
+        url('../fonts/DrukWideWeb-Super.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+h2{
+    font-family: 'Druk Wide Web Super' !important;
+	color: #f9de7e !important;
+}
+h4{
+	font-family: 'Druk Wide Medium' !important;
+	color: #f9de7e !important;
+}
+img{
+	width: 100%;
+}
+
+body{
+	margin: 0;
+	width: 100vw;
+	overflow-y: hidden !important;
+}
+i.fa.fa-bell {
+    transform: rotate(45deg);
+}
+h1{
+  font-family: 'Druk Wide' !important;
+  font-weight: bold;
+  color: #f9de7e !important;
+}
+p, span, h4{
+   font-family: 'Effra Heavy' !important;
+}
+.no_padding{
+	padding: 0 !important;
+}
+.button-3d {
+    box-sizing: border-box;
+    padding: 12px 20px;
+    margin: 15px 0;
+    transition: all 0.6s ease-out;
+    background: #fff;
+    border: 3px solid #000;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none !important;
+	text-transform: uppercase;
+	font-family: 'Druk Wide Web Super' !important;
+}
+
+.button-3d a{
+	color: #000;
+	text-decoration: none !important;
+}
+.button-3d a:hover{
+	color: #000;
+}
+.social .button-3d {
+    font-size: 8px !important;
+    padding: 0 10px 0 0 !important;
+	text-align: center;
+}
+.social .button-3d span{
+	display: inline-block !important;
+    padding: 3px 5px !important;
+    background: #2b65cb !important;
+    color: #fff !important;
+	font-size: 14px;
+	margin-right: 5px;
+}
+.play-now .music-btn,.game-holder .music-btn {
+    display: block;
+    width: 100%;
+    text-align: right;
+    padding: 20px 40px;
+}
+.match-holder .music-btn {
+    display: block;
+    width: 100%;
+    text-align: right;
+    padding: 0px 40px;
+}
+.play-now .music-btn .button-3d,.match-holder .music-btn .button-3d, .game-holder .music-btn .button-3d{
+	padding: 5px 10px !important;
+    margin: 10px !important;
+} 
+.play-now {
+    height: 100vh;
+    width: 100%;
+	overflow: hidden;
+	/*background: url("../images/avatar.bk.jpg") no-repeat;*/
+	background-position: center;
+	background-size: cover;
+}
+.game-holder{
+	height: 100vh;
+    width: 100%;
+	overflow: hidden;
+	background: #50226e;
+	background-position: center;
+	background-size: cover;
+}
+.button-3d.color-4.bottom-right {
+  box-shadow: 10px 10px #000000, 9px 9px #000000, 8px 8px #000000, 7px 7px #000000, 6px 6px #000000, 5px 5px #000000, 4px 4px #000000, 3px 3px #000000, 2px 2px #000000, 1px 1px #000000;
+}
+.shaddow{
+	  box-shadow: 20px 20px #000000, 19px 19px #000000, 18px 18px #000000, 17px 17px #000000, 10px 10px #000000, 11px 11px #000000, 10px 10px #000000, 9px 9px #000000, 8px 8px #000000, 7px 7px #000000;
+}
+.button-3d.color-4.bottom-right:active,.button-3d.color-4.bottom-right:hover {
+  box-shadow: 4px 4px #000000, 3px 3px #000000, 2px 2px #000000, 1px 1px #000000;
+  transform: translate(6px, 6px);
+}
+.first-date{
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	background-position: center;
+	background-size: cover;
+}
+.heart {
+    z-index: -9;
+    position: absolute;
+    width: 100%;
+	height: 100vh;
+}
+.heart img{
+	height: 100% !important;
+}
+.entry {
+    text-align: center;
+    padding-top: 24vh;
+}
+.entry .top-heading img{
+	width: 10%;
+    padding: 15px 0;
+}
+.entry .top-heading h1{
+	font-size: 22px;
+    letter-spacing: 5px;
+    color: #f9de7e;
+    margin: 20px 0 15px;
+}
+.crunchy-date {
+    width: 80%;
+    margin: auto;
+}
+.crunchy-date input {
+    padding: 50px 0px;
+    font-family: 'Druk Wide' !important;
+    font-weight: bold;
+    width: 15%;
+    text-align: center;
+    color: #50226e;
+    margin: 10px;
+    font-size: 18px;
+}
+.crunchy-date input::-webkit-input-placeholder { /* Edge */
+  color: #50226e;
+}
+
+.crunchy-date input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #50226e;
+}
+
+.crunchy-date input::placeholder {
+  color: #50226e;
+}
+.crunchy-date p{
+    font-size: 9px;
+    width: 50%;
+    margin: 15px auto;
+    color: #f9de7e;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 15px;
+}
+.crunchy-date p a{
+	color: #f9de7e;
+	text-decoration: underline;
+}
+.login .top-heading h4{
+	font-size: 34px;
+    color: #f9de7e;
+    letter-spacing: 5px;
+}
+.login .top-heading h2{
+	font-size: 82px;
+    color: #f9de7e;
+    line-height: 73px;
+}
+.social-container {
+	width: 57%;
+    margin: auto;
+}
+.social {
+	padding: 0 !important;
+}
+.play-section {
+    width: 100%;
+    overflow: hidden;
+    background: url(../images/playnow-bk.png) no-repeat;
+    background-position: left;
+    background-size: cover;
+    height: 250px;
+    position: absolute;
+    bottom: 20px;
+}
+.fancy{
+	width: 100%;
+    overflow: hidden;
+    background: url("../images/fancy-bk.png") no-repeat;
+    background-position: left;
+    background-size: cover;
+    height: 480px;
+    position: absolute;
+    bottom: 20px;
+	padding-top: 70px;
+}
+.match-holder{
+	width: 100%;
+    overflow: hidden;
+    background: url("../images/color-bk.jpg") no-repeat;
+    background-position: left;
+    background-size: cover;
+    height: 100vh;
+	padding-top: 20px;
+}
+.match-holder .content-holder h1{
+	color: #000 !important;
+    font-size: 24px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Druk Wide Web Super' !important;
+}
+.fancy .crunchy-btn{
+	text-align: center;
+    padding-top: 70px;
+}
+.fancy .crunchy-btn h1{
+	color: #000 !important;
+	font-size: 34px;
+    margin: 30px 0;
+}
+.fancy .button-3d{
+	margin: 20px 50px;
+}
+.play-section .crunchy-btn{
+	text-align: right;
+}
+.play-title {
+    padding-top: 25px;
+}
+.play-title h1{
+	font-size: 24px;
+    margin: 0;
+}
+.play-title h2{
+	font-size: 52px;
+}
+.footer {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 10px;
+    font-size: 9px;
+    color: #f9de7e;
+	letter-spacing: 1px;
+}
+.play-now .footer, .match-holder .footer{
+	background: #50226e;
+    padding: 15px 0 0;
+	bottom: 0;
+}
+ul.ks-cboxtags {
+list-style: none;
+    padding: 30px 20px;
+    width: 90%;
+    margin: auto;
+}
+ul.ks-cboxtags li{
+  display: inline;
+  margin: 3px;
+}
+ul.ks-cboxtags li label{
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid #000;
+    color: #000;
+    border-radius: 0;
+    white-space: nowrap;
+    margin: 3px 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li label {
+    padding: 8px 12px;
+    cursor: pointer;
+	font-size: 12px;
+	font-family: 'Effra Mid';
+}
+
+ul.ks-cboxtags li label::before {
+	display: none;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+    content: "\f00c";
+    transform: rotate(-360deg);
+    transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+    border: 2px solid #000;
+    background-color: #000;
+    color: #fff;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+  display: absolute;
+}
+ul.ks-cboxtags li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+ul.ks-cboxtags li input[type="checkbox"]:focus + label {
+  border: 2px solid #000;
+}
+.content-holder {
+    position: relative;
+}
+.match-form {
+    margin-top: -12%;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+}
+.match .crunchy-btn{
+	text-align: center;
+}
+.match .crunchy-btn .button-3d{
+	margin: 0 !important;
+}
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+.blink_me2 {
+  animation: blinker 2s linear infinite;
+}
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+.match-result {
+	width: 22%;
+    background: #eff0f0;
+    text-align: center;
+    position: absolute;
+    right: 20%;
+    top: 28%;
+    height: 90px;
+    overflow-x: scroll;
+}
+.match-result ul{
+	list-style-type: none;
+    padding: 0;
+	font-family: 'Effra Mid';
+}
+.match-result ul li{
+	line-height: 18px;
+}
+.select-avatar{
+	opacity: 0.3;
+	transition: opacity .6s ease-out;
+    -moz-transition: opacity .6s ease-out;
+    -webkit-transition: opacity .6s ease-out;
+    -o-transition: opacity .6s ease-out;
+	cursor: pointer;
+}
+
+.select-avatar:hover,.select-avatar.active{
+ 	opacity: 1;
+}
+.avatar-holder .data-center {
+    padding-bottom: 10px;
+} 
+.select-avatar {
+    margin: 15px 0 0 0 !important;
+}
+.select-avatar img{
+	width: 85%;
+}
+.select-avatar span{
+	text-transform: uppercase;
+    font-size: 14px;
+}
+.match-holder .content-holder{
+	margin-bottom: 15px;
+}
+.play-btn .button-3d{
+	 font-size: 14px;
+	 padding: 8px 35px !important;
+	
+}
+.play-here{
+	text-align: center;
+}
+.play-here img{
+	width: 80%;
+}
+.timer {
+    margin: 50px auto 0;
+}
+.timer .time{
+	display: inline-block;
+    width: 18%;
+}
+.timer .time img{
+	vertical-align: inherit !important;
+}
+.timer h2{
+    display: inline-block;
+    width: auto;
+    font-size: 24px;
+    color: #fff !important;
+    margin-left: 20px;
+}
+.timer h2 span{
+	display: block;
+    font-size: 15px;
+    color: #fff !important;
+}
+.image {
+    width: 50px;
+    height: 50px;
+    background: #f7cae4;
+    padding: 7px;
+    border-radius: 100%;
+    text-align: center;
+    border: 3px solid #fff;
+    display: inline-block;
+	margin: 0 15px;
+}
+.gamer-profile {
+    padding: 40px;
+	color: #fff;
+}
+.row{
+	margin: 0 !important;
+}
+.gamer-profile .name{
+	font-size: 16px;
+}
+.gamer-leadership{
+	width: 70%;
+    margin: 20px auto;
+    background-image: url(../images/3d.png);
+    background-size: cover;
+    background-position: bottom;
+    padding-bottom: 45px;
+    padding-left: 0;
+    background-repeat: no-repeat;
+    padding-right: 30px;
+}
+.gamer-leadership .block{
+	background: #fff;
+    height: 420px;
+    border: 5px solid #000;
+}
+.gamer-leadership .banner{
+	height: 100%;
+    background: #50226e;
+}
+.gamer-leadership .banner img{
+	height: 100% !important;
+    width: auto !important;
+}
+.leaderboard {
+    padding: 30px 0 0 40px !important;
+}
+.leaderboard h2{
+	color: #50226e !important;
+    font-size: 24px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+	position: relative;
+}
+.leaderboard h2 .sub{
+	display: inline-block;
+    font-size: 12px;
+    position: absolute;
+    top: -2px;
+    margin: 0 5px;
+}
+.leaderboard .gamer-profile{
+    padding: 10px 0;
+    position: relative;
+    border-bottom: 2px solid #000;
+}
+.leaderboard .gamer-profile .image{
+	position: absolute;
+    left: -78px;
+    border: 2px solid #50226e;
+	top: 0;
+}
+.leaderboard .gamer-profile h2{
+	display: inline-block;
+    font-size: 15px;
+    color: #50226e !important;
+    margin: 0 25px;
+}
+.leaderboard .gamer-profile .name {
+    font-size: 14px;
+    color: #50226e !important;
+    text-transform: uppercase;
+    font-family: 'Druk Wide Web Super' !important;
+}
+.leaderboard .gamer-profile .name {
+    font-size: 14px;
+    color: #50226e !important;
+    text-transform: uppercase;
+    font-family: 'Druk Wide Web Super' !important;
+}
+.points{
+	border: none !important;
+    width: 55%;
+    text-align: right;
+}
+.results ul {
+    padding-left: 15px;
+    display: block;
+    width: 100%;
+    list-style-type: decimal;
+    font-family: 'Effra Heavy' !important;
+	padding-top: 20px;
+}
+.results ul li span{
+	display: inline-block;
+	margin: 3px 0;
+	font-size: 14px;
+}
+.results ul li span.divider {
+    width: 50%;
+	margin: 0 10px;
+}
+.results ul li span.points{
+	width: auto !important;
+}
+.results {
+    height: 55%;
+    overflow: scroll !important;
+    padding-left: 9px;
+}
+.replay .button-3d{
+	padding: 10px 20px !important;
+	margin: 10px;
+	font-size: 14px;
+}
+.replay{
+	text-align: center;
+}
+.replay h2{
+	display: inline-flex;
+    font-size: 11px;
+    color: #000 !important;
+    width: 17%;
+    text-align: left;
+    padding-top: 20px;
+    margin-left: 5px;
+}
+.bell {
+    background: #50226e;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 10px !important;
+}
+.shine {
+  background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+  -webkit-background-size: 150px;
+  color: rgb(0 0 0 / 60%);
+  -webkit-background-clip: text;
+  -webkit-animation-name: shine;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
+  font-family: 'Druk Wide Web Super' !important;
+}
+
+@-webkit-keyframes shine {
+  0%, 10% {
+    background-position: -1000px;
+  }
+  20% {
+    background-position: top left;
+  }
+  90% {
+    background-position: top right;
+  }
+  100% {
+    background-position: 1000px;
+  }
+}
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -99;
+}
+@media only screen and (max-width: 1366px) and (min-width: 750px) {
+	.heart {
+    z-index: -9;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    overflow: hidden !important;
+	}
+	.heart img{
+		position: absolute;
+		height: 100%;
+		LEFT: 0;
+	}
+	
+}
+@media only screen and (max-width: 750px) and (min-width: 320px) {
+	.first-date{
+		background: url("../images/Speed-Date-2.png") no-repeat !important;
+		background-position: center;
+    	background-size: cover;
+	}
+	.first-date .heart{
+		display: none;
+	}
+   .entry .top-heading img {
+		width: 40%;
+		padding: 5px 0;
+	}
+	.entry {
+		text-align: center;
+		padding-top: 15vh;
+	}
+	.crunchy-date {
+		width: 100%;
+		margin: 20px auto;
+	}
+	.crunchy-date input{
+		width: 27%;
+		margin: 3px;
+    	font-size: 13px;
+		padding: 30px 0px;
+	}
+	.crunchy-date p{
+		font-size: 8px;
+    	width: 90%;
+	}
+	.entry .top-heading h1 {
+    	font-size: 16px;
+		margin: 5px !important;
+	}
+	.button-3d{
+		padding: 10px 20px;
+		font-size: 14px;
+	}
+	.login .top-heading h2 {
+		font-size: 40px;
+		line-height: 37px;
+	}
+	.login .top-heading h4 {
+    	font-size: 24px;
+	}
+	.social-container {
+    	width: 100%;
+	}
+	.social .button-3d{
+		width: 70%;
+		text-align: left;
+		margin: 10px auto;
+	}
+	.footer p{
+		width: 80%;
+    	margin: auto;
+	}
+	.play-title h2 {
+		font-size: 42px;
+		line-height: 40px;
+	}
+	.play-title h1 {
+		font-size: 18px;
+		margin: 0 auto 10px;
+	}
+
+	.play-section{
+		height: 400px;
+		text-align: center;
+    	padding-top: 50px;
+	}
+	.play-section img{
+		 width: 40%;
+	}
+	.play-section .crunchy-btn {
+    	text-align: center;
+	}
+	.play-now .footer, .match-holder .footer{
+		padding: 15px;
+   		 bottom: 0;
+	}
+	.fancy .crunchy-btn h1{
+		font-size: 24px;
+   		 margin: 25px 0;
+	}
+	.fancy .button-3d {
+		margin: 20px 10px;
+		font-size: 12px;
+	}
+	.match-holder .content-holder h1{
+		font-size: 14px;
+		width: 100%;
+		margin: 10px auto;
+	}
+	.data-center img{
+		width: 120%;
+    	margin-left: -28px;
+	}
+	.match-result {
+		width: 35%;
+		background: #eff0f0;
+		text-align: center;
+		position: absolute;
+		right: 31px;
+		top: 92px;
+		height: 50px;
+		overflow-x: scroll;
+		border: 3px solid #50226e;
+		border-radius: 5px;
+	}
+		.match-result ul li {
+		line-height: 13px;
+		font-size: 12px;
+	}
+	.match-form {
+    	margin-top: -20%;
+	}
+	ul.ks-cboxtags{
+		padding: 30px 0px 0;
+    	width: 100%;
+	}
+	ul.ks-cboxtags li label {
+    	padding: 3px 15px;
+	}
+	.data-center {
+    	padding-top: 20px;
+	}
+	.match-holder{
+		height: 100vh;
+		padding-top: 20px;
+		position: relative;
+		padding-bottom: 80px;
+	}
+	.gamer-profile,.timer,.game-holder .music-btn{
+		text-align: center;
+	}
+	.timer{
+		 margin: 20px auto 0;
+	}
+	.gamer-profile .name{
+		margin-left: 10px;
+	}
+	.timer .time {
+		display: inline-block;
+		width: 15%;
+	}
+	.gamer-leadership {
+		width: 100%;
+		margin: 20px auto;
+		background-image: none;
+		background-size: cover;
+		background-position: bottom;
+		padding-bottom: 0;
+		padding-left: 0;
+		background-repeat: no-repeat;
+		padding-right: 0;
+	}
+	.leaderboard {
+   	 padding: 15px 0 0 20px !important;
+	}
+	.results {
+    	height: 75%;
+	}
+	.results ul li span.divider {
+   		 width: 25%;
+	}
+	.results ul,.results ul li span{
+		font-size: 12px;
+	}
+	.gamer-leadership .banner{
+		display: none;
+	}
+	.leaderboard h2{
+		font-size: 18px;
+	}
+	.leaderboard .gamer-profile .name{
+		font-size: 9px;
+		margin: 0;
+	}
+	.leaderboard .gamer-profile h2 {
+		display: inline-block;
+		font-size: 10px;
+		color: #50226e !important;
+		margin: 0;
+		padding-right: 10px;
+	}
+	.leaderboard .gamer-profile .image{
+		margin: 0;
+		left: -35px;
+		top: -9px;
+		width: 40px;
+		height: 40px;
+	}
+	.results ul{
+		padding-top: 5px;
+	}
+	.leaderboard .gamer-profile {
+    	padding: 0px 0;
+	}
+	.replay h2{
+		font-size: 9px;
+		width: 100%;
+		text-align: center !important;
+    	display: block;
+	}
+	.replay .button-3d{
+		font-size: 10px;
+	}
+	.avatar-main{
+		height: auto !important;
+	}
+	.winners{
+		height: auto !important;
+	}
+	
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+	.gamer-leadership {
+    	width: 95%;
+		height: 460px;
+		margin-bottom: 40px;
+	}
+	.winners .content-holder{
+		padding-top: 40px;
+	}
+	.leaderboard .gamer-profile h2{
+		margin: 0 10px;
+	}
+	.replay h2{
+		width: 30%;
+	}
+	.crunchy-date input{
+		width: 25%;
+	}
+	.entry .top-heading img {
+    	width: 25%;
+	}
+	.entry .top-heading h1 {
+    	font-size: 40px;
+	}
+	.crunchy-date p {
+		font-size: 10px;
+		width: 70%;
+	}
+	.social-container {
+    	width: 100%;
+	}
+	.play-title h2 {
+    	font-size: 48px;
+	}
+	.play-section{
+		height: 350px;
+		padding-top: 70px;
+	}
+	.timer ,.game-holder .music-btn{
+		text-align: center;
+	}
+	.timer .time {
+    	display: inline-block;
+    	width: 8%;
+	}
+}
+
+
+
